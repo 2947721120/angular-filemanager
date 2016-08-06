@@ -33,12 +33,12 @@
    - 迁移jQuery来本地或angular.element
 
 ### 后端API
-[Read the docs](API.md)
+[阅读文档](API.md)
 
 ---------
 
 ### 使用现有项目
-**1) Install and use**
+**1) 安装和使用**
 ```bower install --save angular-filemanager```
 
 **2) 在项目中包含的依赖**
@@ -55,7 +55,7 @@
   <script src="dist/angular-filemanager.min.js"></script>
 ```
 
-**3) Use the angular directive in your HTML**
+**3) 在你的中使用角指令 HTML**
 ```html
 <angular-filemanager></angular-filemanager>
 ```
