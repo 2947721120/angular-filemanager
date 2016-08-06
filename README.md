@@ -1,46 +1,47 @@
 ## angular-filemanager
 
-A very smart filemanager to manage your files in the browser developed in AngularJS with Material-Design styles by [Jonas Sciangula Street](https://github.com/joni2back)
+一个非常聪明的文件管理器在材料设计风格与AngularJS开发的浏览器管理你的文件
+ by [Jonas Sciangula Street](https://github.com/joni2back)
 
-[![Build Status](https://travis-ci.org/joni2back/angular-filemanager.svg?branch=master)](https://travis-ci.org/joni2back/angular-filemanager)
+[![生成状态](https://travis-ci.org/joni2back/angular-filemanager.svg?branch=master)](https://travis-ci.org/joni2back/angular-filemanager)
 
-### Support
-This project is under free license. If you want to support the angular-filemanager development or just thank it's main maintainer by paying a beer, you can make a donation by clicking the following button  [![Donate](https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XRB7EW72PS982) 
+### 支持
+该项目下的自由许可。如果你想支持的角度，文件管理器开发或只是感谢它的主要维护者，通过支付啤酒，您可以通过点击下面的按钮进行捐款 [![Donate](https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XRB7EW72PS982) 
 
 
-#### [Try the DEMO](http://angular-filemanager.zendelsolutions.com/)
+#### [尝试演示](http://angular-filemanager.zendelsolutions.com/)
 ---------
 ![](https://raw.githubusercontent.com/joni2back/angular-filemanager/master/screenshot.gif)
 
-### Features
-  - Multilanguage (English, Chinese, Spanish, Russian, Portuguese, French, German, Slovak, Hebrew, Persian, Polish, Ukrainian, Turkish)
-  - Multiple templates (List / Icons)
-  - Multiple file upload
-  - Multiple file support
-  - Pick files callback for third parties apps
-  - Search files
-  - Directory tree navigation
-  - Copy, Move, Rename (Interactive UX)
-  - Delete, Edit, Preview, Download
-  - File permissions (Unix chmod style)
-  - Mobile support
+###特征
+   - 多国语言（英语，中国语，西班牙语，俄语，葡萄牙语，法语，德语，斯洛伐克语，希伯来语，波斯语，波兰语，乌克兰语，土耳其语）
+   - 多个模板（列表/图标）
+   - 多文件上传
+   - 多文件支持
+   - 选择文件的回调为第三方应用程序
+   - 搜索文件
+   - 目录树导航
+   - 复制，移动，重命名（交互式UX）
+   - 删除，编辑，预览，下载
+   - 文件权限（CHMOD的Unix风格）
+   - 移动支持
 
-### TODO
-  - Drag and drop
-  - Dropbox and Google Drive compatibility
-  - Extend backend bridges (PHP, Java, Python, Node, .Net)
-  - Migrate jQuery to native or angular.element
+### 去做
+   - 拖放
+   - Dropbox和谷歌驱动器兼容性
+   - 扩展后端桥（PHP，Java和Python中，节点，.NET）
+   - 迁移jQuery来本地或angular.element
 
-### Backend API
+### 后端API
 [Read the docs](API.md)
 
 ---------
 
-### Use in your existing project
+### 使用现有项目
 **1) Install and use**
 ```bower install --save angular-filemanager```
 
-**2) Include the dependencies in your project**
+**2) 在项目中包含的依赖**
 ```html
 <!-- third party -->
   <script src="bower_components/angular/angular.min.js"></script>
@@ -61,9 +62,9 @@ This project is under free license. If you want to support the angular-filemanag
 
 ---------
 
-### Using source files instead of minified js
+### 使用源文件，而不是minified js
 ```html
-<!-- Uncomment if you need to use raw source code
+<!--注释如果您需要使用原始源代码
   <script src="src/js/app.js"></script>
   <script src="src/js/directives/directives.js"></script>
   <script src="src/js/filters/filters.js"></script>
@@ -81,15 +82,15 @@ This project is under free license. If you want to support the angular-filemanag
   <link href="src/css/main.css" rel="stylesheet">
 -->
 
-<!-- Comment if you need to use raw source code -->
+<!-- 注释如果您需要使用原始源代码 -->
   <link href="dist/angular-filemanager.min.css" rel="stylesheet">
   <script src="dist/angular-filemanager.min.js"></script>
-<!-- /Comment if you need to use raw source code -->
+<!-- /如果你需要使用原始源代码注释 -->
 ```
 
 ---------
 
-### Extending the configuration file
+### 延伸配置文件
 ```html
 <script type="text/javascript">
 angular.module('FileManagerApp').config(['fileManagerConfigProvider', function (config) {
@@ -114,14 +115,14 @@ angular.module('FileManagerApp').config(['fileManagerConfigProvider', function (
 
 ---------
 
-### Contribute
-To contribute to the project you can simply fork this repo. To build a minified version, you can simply run the Gulp
-task `gulp build`. The minified/uglified files are created in the `dist` folder.
+### 有助于
+为了促进该项目可以简单地派生该回购协议。要建立一个缩小的版本，你可以简单地运行咕嘟咕嘟
+任务 `gulp build`.缩小/丑化文件被创建在 `dist` folder.
 
-### Versioning
-For transparency into our release cycle and in striving to maintain backward compatibility, angular-filemanager is maintained under [the Semantic Versioning guidelines](http://semver.org/).
+### 版本
+为了提高透明度到我们的发布周期，并在努力保持向后兼容性，角文件管理器下保持 [the Semantic Versioning guidelines](http://semver.org/).
 
-### Copyright and license
-Code and documentation released under [the MIT license](https://github.com/joni2back/angular-filemanager/blob/master/LICENSE).
+### 版权与许可
+在代码和文档发布 [the MIT license](https://github.com/joni2back/angular-filemanager/blob/master/LICENSE).
 
 
