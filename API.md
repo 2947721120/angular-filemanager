@@ -1,15 +1,15 @@
 ## angular-filemanager API docs [multiple file support]
 
-#### Listing (URL: fileManagerConfig.listUrl, Method: POST)
+#### 上市 (URL: fileManagerConfig.listUrl, Method: POST)
 
-**JSON Request content**
+**JSON请求内容**
 ```json
 {
     "action": "list",
     "path": "/public_html"
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": [ 
     {
@@ -28,8 +28,8 @@
 ]}
 ```
 --------------------
-#### Rename (URL: fileManagerConfig.renameUrl, Method: POST)
-**JSON Request content**
+#### 重命名 (URL: fileManagerConfig.renameUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "rename",
@@ -37,13 +37,13 @@
     "newItemPath": "/public_html/index2.php"
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Move (URL: fileManagerConfig.moveUrl, Method: POST)
-**JSON Request content**
+#### 移动 (URL: fileManagerConfig.moveUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "move",
@@ -51,13 +51,13 @@
     "newPath": "/public_html/includes"
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Copy (URL: fileManagerConfig.copyUrl, Method: POST)
-**JSON Request content**
+#### 复制(URL: fileManagerConfig.copyUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "copy",
@@ -66,26 +66,26 @@
     "singleFilename": "renamed.php" <-- (only present in single selection copy)
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Remove (URL: fileManagerConfig.removeUrl, Method: POST)
-**JSON Request content**
+#### 删除 (URL: fileManagerConfig.removeUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "remove",
     "items": ["/public_html/index.php"],
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Edit file (URL: fileManagerConfig.editUrl, Method: POST)
-**JSON Request content**
+#### 编辑文件 (URL: fileManagerConfig.editUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "edit",
@@ -93,39 +93,39 @@
     "content": "<?php echo random(); ?>"
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Get content of a file (URL: fileManagerConfig.getContentUrl, Method: POST)
-**JSON Request content**
+#### 获取文件的内容 (URL: fileManagerConfig.getContentUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "getContent",
     "item": "/public_html/index.php"
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": "<?php echo random(); ?>" }
 ```
 --------------------
-#### Create folder (URL: fileManagerConfig.createFolderUrl, Method: POST)
-**JSON Request content**
+#### 创建文件夹 (URL: fileManagerConfig.createFolderUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "createFolder",
     "newPath": "/public_html/new-folder"
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Set permissions (URL: fileManagerConfig.permissionsUrl, Method: POST)
-**JSON Request content**
+#### 设置权限 (URL: fileManagerConfig.permissionsUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "changePermissions",
@@ -135,13 +135,13 @@
     "recursive": true
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Compress file (URL: fileManagerConfig.compressUrl, Method: POST)
-**JSON Request content**
+#### 压缩文件 (URL: fileManagerConfig.compressUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "compress",
@@ -150,13 +150,13 @@
     "compressedFilename": "random-files.zip"
 }}
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Extract file (URL: fileManagerConfig.extractUrl, Method: POST)
-**JSON Request content**
+#### 提取文件 (URL: fileManagerConfig.extractUrl, Method: POST)
+**JSON请求内容**
 ```json
 {
     "action": "extract",
@@ -164,14 +164,14 @@
     "item": "/public_html/compressed.zip"
 }
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
 --------------------
-#### Upload file (URL: fileManagerConfig.uploadUrl, Method: POST, Content-Type: multipart/form-data)
+#### 上传文件 (URL: fileManagerConfig.uploadUrl, Method: POST, Content-Type: multipart/form-data)
 
-**Http post request payload**
+**HTTP POST请求负载**
 ```
 ------WebKitFormBoundaryqBnbHc6RKfXVAf9j
 Content-Disposition: form-data; name="destination"
@@ -181,30 +181,30 @@ Content-Disposition: form-data; name="destination"
 Content-Disposition: form-data; name="file-0"; filename="github.txt"
 Content-Type: text/plain
 ```
-**JSON Response**
+**JSON响应**
 ```json
 { "result": { "success": true, "error": null } }
 ```
+无限上传文件的项目，每个项目将被列为file-0，file-1，等。
 
-Unlimited file items to upload, each item will be enumerated as file-0, file-1, etc.
 
-For example, you may retrieve the file in PHP using:
+例如，您可以检索使用PHP文件：
 ```php
 $destination = $_POST['destination'];
 $_FILES['file-0'] or foreach($_FILES)
 ```
 --------------------
-#### Download / Preview file (URL: fileManagerConfig.downloadMultipleUrl, Method: GET)
+#### 下载/预览文件 (URL: fileManagerConfig.downloadMultipleUrl, Method: GET)
 **Http query params**
 ```
 [fileManagerConfig.downloadFileUrl]?action=download&path=/public_html/image.jpg
 ```
-**Response**
+**响应**
 ```
 -File content
 ```
 --------------------
-#### Download multiples files in ZIP/TAR (URL: fileManagerConfig.downloadFileUrl, Method: GET)
+#### 下载的倍数文件在jpg/zip (URL: fileManagerConfig.downloadFileUrl, Method: GET)
 **JSON Request content**
 ```json
 {
@@ -213,15 +213,15 @@ $_FILES['file-0'] or foreach($_FILES)
     "toFilename": "multiple-items.zip"
 }}
 ```
-**Response**
+**响应**
 ```
 -File content
 ```
 --------------------
-##### Errors / Exceptions
-Any backend error should be with an error 500 HTTP code.
+##### 错误/异常
+任何后端的误差应与HTTP代码错误500.
 
-Btw, you can also report errors with a 200 response both using this json structure
+顺便说一句，你也可以报告错误200响应使用JSON结构
 ```json
 { "result": {
     "success": false,
