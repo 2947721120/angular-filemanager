@@ -205,7 +205,7 @@ $_FILES['file-0'] or foreach($_FILES)
 ```
 --------------------
 #### 下载的倍数文件在jpg/zip (URL: fileManagerConfig.downloadFileUrl, Method: GET)
-**JSON Request content**
+**JSON请求内容**
 ```json
 {
     "action": "downloadMultiple",
