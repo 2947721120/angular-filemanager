@@ -117,7 +117,7 @@ angular.module('FileManagerApp').config(['fileManagerConfigProvider', function (
 
 ### 有助于
 为了促进该项目可以简单地派生该回购协议。要建立一个缩小的版本，你可以简单地运行咕嘟咕嘟
-任务 `gulp build`.缩小/丑化文件被创建在 `dist` folder.
+任务 `gulp build`.缩小/丑化文件被创建在 `dist` 文件夹.
 
 ### 版本
 为了提高透明度到我们的发布周期，并在努力保持向后兼容性，角文件管理器下保持 [the Semantic Versioning guidelines](http://semver.org/).
