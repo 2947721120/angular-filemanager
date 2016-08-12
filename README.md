@@ -120,7 +120,7 @@ angular.module('FileManagerApp').config(['fileManagerConfigProvider', function (
 任务 `gulp build`.缩小/丑化文件被创建在 `dist` 文件夹.
 
 ### 版本
-为了提高透明度到我们的发布周期，并在努力保持向后兼容性，角文件管理器下保持 [the Semantic Versioning guidelines](http://semver.org/).
+为了提高透明度到我们的发布周期，并在努力保持向后兼容性，角文件管理器下保持 [语义版本的指南](http://semver.org/).
 
 ### 版权与许可
 在代码和文档发布 [the MIT license](https://github.com/joni2back/angular-filemanager/blob/master/LICENSE).
